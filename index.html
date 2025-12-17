@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>One-Day Quote Generator</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <header>
+      <h1>Quote Generator</h1>
+      <p class="subtitle">Fresh inspiration — click for a new quote</p>
+    </header>
+
+    <section id="quote-card" class="card" aria-live="polite">
+      <div id="loading" class="loading">Loading…</div>
+
+      <blockquote id="quote" class="quote" hidden>
+        <p id="quote-text"></p>
+        <footer id="quote-author" class="author"></footer>
+      </blockquote>
+
+      <div id="error" class="error" hidden></div>
+
+      <div class="controls">
+        <button id="new-quote" class="btn primary">New Quote</button>
+        <button id="copy-quote" class="btn" title="Copy quote to clipboard">Copy</button>
+        <button id="tweet-quote" class="btn" title="Tweet quote">Tweet</button>
+      </div>
+    </section>
+
+    <footer class="meta">
+      <small>Quotes from <a href="https://quotable.io" target="_blank" rel="noopener">Quotable</a></small>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
